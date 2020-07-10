@@ -1,0 +1,1390 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE MudletPackage>
+<MudletPackage version="1.0">
+    <TriggerPackage>
+        <TriggerGroup isActive="yes" isFolder="yes" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+            <name>proxia</name>
+            <script></script>
+            <triggerType>0</triggerType>
+            <conditonLineDelta>0</conditonLineDelta>
+            <mStayOpen>0</mStayOpen>
+            <mCommand></mCommand>
+            <packageName>proxia</packageName>
+            <mFgColor>#ff0000</mFgColor>
+            <mBgColor>#ffff00</mBgColor>
+            <mSoundFile></mSoundFile>
+            <colorTriggerFgColor>#000000</colorTriggerFgColor>
+            <colorTriggerBgColor>#000000</colorTriggerBgColor>
+            <regexCodeList/>
+            <regexCodePropertyList/>
+            <Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+                <name>prompt</name>
+                <script>writePrompt()
+cureHM()
+checkWord()
+checkBalance()
+checkAfflict()
+if targetShield then
+	echo(&quot;\tTARGET SHIELD UP!!!\n&quot;)
+end</script>
+                <triggerType>0</triggerType>
+                <conditonLineDelta>0</conditonLineDelta>
+                <mStayOpen>0</mStayOpen>
+                <mCommand></mCommand>
+                <packageName></packageName>
+                <mFgColor>#ff0000</mFgColor>
+                <mBgColor>#ffff00</mBgColor>
+                <mSoundFile></mSoundFile>
+                <colorTriggerFgColor>#000000</colorTriggerFgColor>
+                <colorTriggerBgColor>#000000</colorTriggerBgColor>
+                <regexCodeList>
+                    <string>return isPrompt()</string>
+                </regexCodeList>
+                <regexCodePropertyList>
+                    <integer>4</integer>
+                </regexCodePropertyList>
+            </Trigger>
+            <TriggerGroup isActive="yes" isFolder="yes" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+                <name>misc</name>
+                <script></script>
+                <triggerType>0</triggerType>
+                <conditonLineDelta>0</conditonLineDelta>
+                <mStayOpen>0</mStayOpen>
+                <mCommand></mCommand>
+                <packageName></packageName>
+                <mFgColor>#ff0000</mFgColor>
+                <mBgColor>#ffff00</mBgColor>
+                <mSoundFile></mSoundFile>
+                <colorTriggerFgColor>#000000</colorTriggerFgColor>
+                <colorTriggerBgColor>#000000</colorTriggerBgColor>
+                <regexCodeList/>
+                <regexCodePropertyList/>
+                <Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+                    <name>noriftables</name>
+                    <script>isInrAll = false</script>
+                    <triggerType>0</triggerType>
+                    <conditonLineDelta>0</conditonLineDelta>
+                    <mStayOpen>0</mStayOpen>
+                    <mCommand></mCommand>
+                    <packageName></packageName>
+                    <mFgColor>#ff0000</mFgColor>
+                    <mBgColor>#ffff00</mBgColor>
+                    <mSoundFile></mSoundFile>
+                    <colorTriggerFgColor>#000000</colorTriggerFgColor>
+                    <colorTriggerBgColor>#000000</colorTriggerBgColor>
+                    <regexCodeList>
+                        <string>You have nothing to store in the rift.</string>
+                    </regexCodeList>
+                    <regexCodePropertyList>
+                        <integer>3</integer>
+                    </regexCodePropertyList>
+                </Trigger>
+            </TriggerGroup>
+            <TriggerGroup isActive="yes" isFolder="yes" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+                <name>Skills</name>
+                <script></script>
+                <triggerType>0</triggerType>
+                <conditonLineDelta>0</conditonLineDelta>
+                <mStayOpen>0</mStayOpen>
+                <mCommand></mCommand>
+                <packageName></packageName>
+                <mFgColor>#ff0000</mFgColor>
+                <mBgColor>#ffff00</mBgColor>
+                <mSoundFile></mSoundFile>
+                <colorTriggerFgColor>#000000</colorTriggerFgColor>
+                <colorTriggerBgColor>#000000</colorTriggerBgColor>
+                <regexCodeList/>
+                <regexCodePropertyList/>
+                <TriggerGroup isActive="yes" isFolder="yes" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+                    <name>Synthesis</name>
+                    <script></script>
+                    <triggerType>0</triggerType>
+                    <conditonLineDelta>0</conditonLineDelta>
+                    <mStayOpen>0</mStayOpen>
+                    <mCommand></mCommand>
+                    <packageName></packageName>
+                    <mFgColor>#ff0000</mFgColor>
+                    <mBgColor>#ffff00</mBgColor>
+                    <mSoundFile></mSoundFile>
+                    <colorTriggerFgColor>#000000</colorTriggerFgColor>
+                    <colorTriggerBgColor>#000000</colorTriggerBgColor>
+                    <regexCodeList/>
+                    <regexCodePropertyList/>
+                    <Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+                        <name>Synthesis Continue</name>
+                        <script>if synContinue then
+	if synLeft &gt; 0 then
+		if (synLeft % 10) == 0 then
+			cecho(&quot;&lt;green&gt;\n\t\t&quot; .. synLeft .. &quot; Syntheses left.\n&quot;)
+		elseif (synLeft % 5) == 0 then
+			cecho(&quot;&lt;yellow&gt;\n\t\t&quot; .. synLeft .. &quot; Syntheses left.\n&quot;)
+		end
+		synLeft = synLeft - 1
+		Synthesise(synMetal, synBase)
+	else
+		cecho(&quot;&lt;red&gt;\n\t\tSynthesis of &quot; .. synMetal .. &quot; complete.&quot;)
+	end
+end</script>
+                        <triggerType>0</triggerType>
+                        <conditonLineDelta>0</conditonLineDelta>
+                        <mStayOpen>0</mStayOpen>
+                        <mCommand></mCommand>
+                        <packageName></packageName>
+                        <mFgColor>#ff0000</mFgColor>
+                        <mBgColor>#ffff00</mBgColor>
+                        <mSoundFile></mSoundFile>
+                        <colorTriggerFgColor>#000000</colorTriggerFgColor>
+                        <colorTriggerBgColor>#000000</colorTriggerBgColor>
+                        <regexCodeList>
+                            <string>With careful measurements, you react</string>
+                        </regexCodeList>
+                        <regexCodePropertyList>
+                            <integer>2</integer>
+                        </regexCodePropertyList>
+                    </Trigger>
+                    <Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+                        <name>Transmutation Continue</name>
+                        <script>if transContinue then
+	if transLeft &gt; 0 then
+		if (transLeft % 10) == 0 then
+			cecho(&quot;&lt;green&gt;\n\t\t&quot; .. transLeft .. &quot; Transmutations left.\n&quot;)
+		elseif (transLeft % 5) == 0 then
+			cecho(&quot;&lt;yellow&gt;\n\t\t&quot; .. transLeft .. &quot; Transmutations left.\n&quot;)
+		end
+		transLeft = transLeft - 1
+		Transmute(transMineral)
+	else
+		cecho(&quot;&lt;red&gt;\n\t\tTransmutation of &quot; .. transMineral .. &quot; complete.&quot;)
+	end
+end</script>
+                        <triggerType>0</triggerType>
+                        <conditonLineDelta>0</conditonLineDelta>
+                        <mStayOpen>0</mStayOpen>
+                        <mCommand></mCommand>
+                        <packageName></packageName>
+                        <mFgColor>#ff0000</mFgColor>
+                        <mBgColor>#ffff00</mBgColor>
+                        <mSoundFile></mSoundFile>
+                        <colorTriggerFgColor>#000000</colorTriggerFgColor>
+                        <colorTriggerBgColor>#000000</colorTriggerBgColor>
+                        <regexCodeList>
+                            <string>You place your reactants into a large glass flask, heating it over a bright candle as you add a thin acid to dissolve them.</string>
+                        </regexCodeList>
+                        <regexCodePropertyList>
+                            <integer>2</integer>
+                        </regexCodePropertyList>
+                    </Trigger>
+                    <Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+                        <name>ignore other</name>
+                        <script>gagLine()</script>
+                        <triggerType>0</triggerType>
+                        <conditonLineDelta>0</conditonLineDelta>
+                        <mStayOpen>0</mStayOpen>
+                        <mCommand></mCommand>
+                        <packageName></packageName>
+                        <mFgColor>#ff0000</mFgColor>
+                        <mBgColor>#ffff00</mBgColor>
+                        <mSoundFile></mSoundFile>
+                        <colorTriggerFgColor>#000000</colorTriggerFgColor>
+                        <colorTriggerBgColor>#000000</colorTriggerBgColor>
+                        <regexCodeList>
+                            <string>^With careful measurements, \w+ reacts \w+ with a series of solvents and powders to synthesise a group of .+\.$</string>
+                            <string>^\w+ places (her|his) reactants into a large glass flask, heating it over a bright candle as (she|he) adds a thin acid to dissolve them. Once the solution is saturated, (she|he) pours in a drop of water to force out a group of .+?, which (she|he) filters and collects.$</string>
+                        </regexCodeList>
+                        <regexCodePropertyList>
+                            <integer>1</integer>
+                            <integer>1</integer>
+                        </regexCodePropertyList>
+                    </Trigger>
+                </TriggerGroup>
+                <TriggerGroup isActive="yes" isFolder="yes" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+                    <name>Word Balance</name>
+                    <script></script>
+                    <triggerType>0</triggerType>
+                    <conditonLineDelta>0</conditonLineDelta>
+                    <mStayOpen>0</mStayOpen>
+                    <mCommand></mCommand>
+                    <packageName></packageName>
+                    <mFgColor>#ff0000</mFgColor>
+                    <mBgColor>#ffff00</mBgColor>
+                    <mSoundFile></mSoundFile>
+                    <colorTriggerFgColor>#000000</colorTriggerFgColor>
+                    <colorTriggerBgColor>#000000</colorTriggerBgColor>
+                    <regexCodeList/>
+                    <regexCodePropertyList/>
+                    <Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+                        <name>wbloss</name>
+                        <script>hasword = false</script>
+                        <triggerType>0</triggerType>
+                        <conditonLineDelta>0</conditonLineDelta>
+                        <mStayOpen>0</mStayOpen>
+                        <mCommand></mCommand>
+                        <packageName></packageName>
+                        <mFgColor>#ff0000</mFgColor>
+                        <mBgColor>#ffff00</mBgColor>
+                        <mSoundFile></mSoundFile>
+                        <colorTriggerFgColor>#000000</colorTriggerFgColor>
+                        <colorTriggerBgColor>#000000</colorTriggerBgColor>
+                        <regexCodeList>
+                            <string>Imbuing your voice with power, you intone,</string>
+                        </regexCodeList>
+                        <regexCodePropertyList>
+                            <integer>2</integer>
+                        </regexCodePropertyList>
+                    </Trigger>
+                    <Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+                        <name>wbgain</name>
+                        <script>hasWord = true</script>
+                        <triggerType>0</triggerType>
+                        <conditonLineDelta>0</conditonLineDelta>
+                        <mStayOpen>0</mStayOpen>
+                        <mCommand></mCommand>
+                        <packageName></packageName>
+                        <mFgColor>#ff0000</mFgColor>
+                        <mBgColor>#ffff00</mBgColor>
+                        <mSoundFile></mSoundFile>
+                        <colorTriggerFgColor>#000000</colorTriggerFgColor>
+                        <colorTriggerBgColor>#000000</colorTriggerBgColor>
+                        <regexCodeList>
+                            <string>You may intone another word of power.</string>
+                        </regexCodeList>
+                        <regexCodePropertyList>
+                            <integer>3</integer>
+                        </regexCodePropertyList>
+                    </Trigger>
+                </TriggerGroup>
+                <TriggerGroup isActive="yes" isFolder="yes" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+                    <name>Battlerage</name>
+                    <script></script>
+                    <triggerType>0</triggerType>
+                    <conditonLineDelta>0</conditonLineDelta>
+                    <mStayOpen>0</mStayOpen>
+                    <mCommand></mCommand>
+                    <packageName></packageName>
+                    <mFgColor>#ff0000</mFgColor>
+                    <mBgColor>#ffff00</mBgColor>
+                    <mSoundFile></mSoundFile>
+                    <colorTriggerFgColor>#000000</colorTriggerFgColor>
+                    <colorTriggerBgColor>#000000</colorTriggerBgColor>
+                    <regexCodeList/>
+                    <regexCodePropertyList/>
+                    <Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+                        <name>shieldup</name>
+                        <script>if string.find(matches[2], target) then
+	targetShield = true
+else
+	echo(&quot;\t ERROR!!!\n&quot;)
+end</script>
+                        <triggerType>0</triggerType>
+                        <conditonLineDelta>0</conditonLineDelta>
+                        <mStayOpen>0</mStayOpen>
+                        <mCommand></mCommand>
+                        <packageName></packageName>
+                        <mFgColor>#ff0000</mFgColor>
+                        <mBgColor>#ffff00</mBgColor>
+                        <mSoundFile></mSoundFile>
+                        <colorTriggerFgColor>#000000</colorTriggerFgColor>
+                        <colorTriggerBgColor>#000000</colorTriggerBgColor>
+                        <regexCodeList>
+                            <string>^A nearly invisible magical shield forms around (.+)$</string>
+                        </regexCodeList>
+                        <regexCodePropertyList>
+                            <integer>1</integer>
+                        </regexCodePropertyList>
+                    </Trigger>
+                    <Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+                        <name>shielddown</name>
+                        <script>if targetShield then
+	targetShield = false
+end</script>
+                        <triggerType>0</triggerType>
+                        <conditonLineDelta>0</conditonLineDelta>
+                        <mStayOpen>0</mStayOpen>
+                        <mCommand></mCommand>
+                        <packageName></packageName>
+                        <mFgColor>#ff0000</mFgColor>
+                        <mBgColor>#ffff00</mBgColor>
+                        <mSoundFile></mSoundFile>
+                        <colorTriggerFgColor>#000000</colorTriggerFgColor>
+                        <colorTriggerBgColor>#000000</colorTriggerBgColor>
+                        <regexCodeList>
+                            <string>You unleash a vicious reaping blow at </string>
+                            <string>You lay into a</string>
+                            <string>Directing your power against the magical shield surrounding</string>
+                        </regexCodeList>
+                        <regexCodePropertyList>
+                            <integer>2</integer>
+                            <integer>2</integer>
+                            <integer>2</integer>
+                        </regexCodePropertyList>
+                    </Trigger>
+                    <Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+                        <name>shielddefinitelyup</name>
+                        <script>targetShield = true</script>
+                        <triggerType>0</triggerType>
+                        <conditonLineDelta>0</conditonLineDelta>
+                        <mStayOpen>0</mStayOpen>
+                        <mCommand></mCommand>
+                        <packageName></packageName>
+                        <mFgColor>#ff0000</mFgColor>
+                        <mBgColor>#ffff00</mBgColor>
+                        <mSoundFile></mSoundFile>
+                        <colorTriggerFgColor>#000000</colorTriggerFgColor>
+                        <colorTriggerBgColor>#000000</colorTriggerBgColor>
+                        <regexCodeList>
+                            <string>A dizzying beam of energy strikes you as your attack rebounds off of</string>
+                        </regexCodeList>
+                        <regexCodePropertyList>
+                            <integer>2</integer>
+                        </regexCodePropertyList>
+                    </Trigger>
+                </TriggerGroup>
+            </TriggerGroup>
+            <TriggerGroup isActive="yes" isFolder="yes" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+                <name>curing</name>
+                <script></script>
+                <triggerType>0</triggerType>
+                <conditonLineDelta>0</conditonLineDelta>
+                <mStayOpen>0</mStayOpen>
+                <mCommand></mCommand>
+                <packageName></packageName>
+                <mFgColor>#ff0000</mFgColor>
+                <mBgColor>#ffff00</mBgColor>
+                <mSoundFile></mSoundFile>
+                <colorTriggerFgColor>#000000</colorTriggerFgColor>
+                <colorTriggerBgColor>#000000</colorTriggerBgColor>
+                <regexCodeList/>
+                <regexCodePropertyList/>
+                <Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+                    <name>sipbal</name>
+                    <script>sipBal = true</script>
+                    <triggerType>0</triggerType>
+                    <conditonLineDelta>0</conditonLineDelta>
+                    <mStayOpen>0</mStayOpen>
+                    <mCommand></mCommand>
+                    <packageName></packageName>
+                    <mFgColor>#ff0000</mFgColor>
+                    <mBgColor>#ffff00</mBgColor>
+                    <mSoundFile></mSoundFile>
+                    <colorTriggerFgColor>#000000</colorTriggerFgColor>
+                    <colorTriggerBgColor>#000000</colorTriggerBgColor>
+                    <regexCodeList>
+                        <string>You may drink another health or mana elixir.</string>
+                    </regexCodeList>
+                    <regexCodePropertyList>
+                        <integer>3</integer>
+                    </regexCodePropertyList>
+                </Trigger>
+                <Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+                    <name>potashbal</name>
+                    <script>potashBal = true</script>
+                    <triggerType>0</triggerType>
+                    <conditonLineDelta>0</conditonLineDelta>
+                    <mStayOpen>0</mStayOpen>
+                    <mCommand></mCommand>
+                    <packageName></packageName>
+                    <mFgColor>#ff0000</mFgColor>
+                    <mBgColor>#ffff00</mBgColor>
+                    <mSoundFile></mSoundFile>
+                    <colorTriggerFgColor>#000000</colorTriggerFgColor>
+                    <colorTriggerBgColor>#000000</colorTriggerBgColor>
+                    <regexCodeList>
+                        <string>You may eat another bit of irid moss or potash.</string>
+                    </regexCodeList>
+                    <regexCodePropertyList>
+                        <integer>3</integer>
+                    </regexCodePropertyList>
+                </Trigger>
+                <Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+                    <name>eatconsumable</name>
+                    <script>if string.find(matches[2], eatQueue[1]) then
+	table.remove(eatQueue, 1)
+	mineralBal = false
+	mineralEating = false
+end
+</script>
+                    <triggerType>0</triggerType>
+                    <conditonLineDelta>0</conditonLineDelta>
+                    <mStayOpen>0</mStayOpen>
+                    <mCommand></mCommand>
+                    <packageName></packageName>
+                    <mFgColor>#ff0000</mFgColor>
+                    <mBgColor>#ffff00</mBgColor>
+                    <mSoundFile></mSoundFile>
+                    <colorTriggerFgColor>#000000</colorTriggerFgColor>
+                    <colorTriggerBgColor>#000000</colorTriggerBgColor>
+                    <regexCodeList>
+                        <string>^You eat (.+)\.$</string>
+                    </regexCodeList>
+                    <regexCodePropertyList>
+                        <integer>1</integer>
+                    </regexCodePropertyList>
+                </Trigger>
+                <Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+                    <name>eatPotash</name>
+                    <script>eatPotash = false</script>
+                    <triggerType>0</triggerType>
+                    <conditonLineDelta>0</conditonLineDelta>
+                    <mStayOpen>0</mStayOpen>
+                    <mCommand></mCommand>
+                    <packageName></packageName>
+                    <mFgColor>#ff0000</mFgColor>
+                    <mBgColor>#ffff00</mBgColor>
+                    <mSoundFile></mSoundFile>
+                    <colorTriggerFgColor>#000000</colorTriggerFgColor>
+                    <colorTriggerBgColor>#000000</colorTriggerBgColor>
+                    <regexCodeList>
+                        <string>You eat a potash crystal.</string>
+                    </regexCodeList>
+                    <regexCodePropertyList>
+                        <integer>3</integer>
+                    </regexCodePropertyList>
+                </Trigger>
+                <Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+                    <name>mineralbal</name>
+                    <script>mineralBal = true</script>
+                    <triggerType>0</triggerType>
+                    <conditonLineDelta>0</conditonLineDelta>
+                    <mStayOpen>0</mStayOpen>
+                    <mCommand></mCommand>
+                    <packageName></packageName>
+                    <mFgColor>#ff0000</mFgColor>
+                    <mBgColor>#ffff00</mBgColor>
+                    <mSoundFile></mSoundFile>
+                    <colorTriggerFgColor>#000000</colorTriggerFgColor>
+                    <colorTriggerBgColor>#000000</colorTriggerBgColor>
+                    <regexCodeList>
+                        <string>You may eat another plant or mineral.</string>
+                    </regexCodeList>
+                    <regexCodePropertyList>
+                        <integer>3</integer>
+                    </regexCodePropertyList>
+                </Trigger>
+            </TriggerGroup>
+        </TriggerGroup>
+    </TriggerPackage>
+    <TimerPackage/>
+    <AliasPackage>
+        <AliasGroup isActive="yes" isFolder="yes">
+            <name>run-lua-code-v4</name>
+            <script></script>
+            <command></command>
+            <packageName>run-lua-code-v4</packageName>
+            <regex></regex>
+            <Alias isActive="yes" isFolder="no">
+                <name>run lua code</name>
+                <script>local f,e = loadstring(&quot;return &quot;..matches[2])
+if not f then
+	f,e = assert(loadstring(matches[2]))
+end
+
+local r = f()
+if r ~= nil then display(r) end</script>
+                <command></command>
+                <packageName></packageName>
+                <regex>^lua (.*)$</regex>
+            </Alias>
+        </AliasGroup>
+        <AliasGroup isActive="yes" isFolder="yes">
+            <name>proxia</name>
+            <script></script>
+            <command></command>
+            <packageName>proxia</packageName>
+            <regex></regex>
+            <AliasGroup isActive="yes" isFolder="yes">
+                <name>Debugging</name>
+                <script></script>
+                <command></command>
+                <packageName></packageName>
+                <regex></regex>
+                <Alias isActive="yes" isFolder="no">
+                    <name>GMCP print</name>
+                    <script>if matches[2] and matches[3] then
+	display(gmcp[matches[2]][matches[3]])
+elseif matches[2] then
+	display(gmcp[matches[2]])
+else
+	display(gmcp)
+end</script>
+                    <command></command>
+                    <packageName></packageName>
+                    <regex>^gmcpp(?: (\w+))?(?: (.+))?$</regex>
+                </Alias>
+                <Alias isActive="yes" isFolder="no">
+                    <name>findRiftAmount</name>
+                    <script>local inrift = matches[2]
+local foundrift = false
+for k,v in ipairs(rift) do
+	if v.name == inrift then
+		print(v.amount)
+		foundrift = true
+	end
+end
+
+if not foundrift then
+	print(&quot;Not found!&quot;)
+end</script>
+                    <command></command>
+                    <packageName></packageName>
+                    <regex>^findrift (\w+)$</regex>
+                </Alias>
+                <Alias isActive="yes" isFolder="no">
+                    <name>riftList</name>
+                    <script>parseRift()</script>
+                    <command></command>
+                    <packageName></packageName>
+                    <regex>^riftlist$</regex>
+                </Alias>
+            </AliasGroup>
+            <AliasGroup isActive="yes" isFolder="yes">
+                <name>misc</name>
+                <script></script>
+                <command></command>
+                <packageName></packageName>
+                <regex></regex>
+                <Alias isActive="yes" isFolder="no">
+                    <name>inr all</name>
+                    <script>isInrAll = true
+send(&quot;inr all&quot;, false)
+tempTimer( 0.5, [[parseRift()]])
+</script>
+                    <command></command>
+                    <packageName></packageName>
+                    <regex>^[iI]nr all$</regex>
+                </Alias>
+                <Alias isActive="yes" isFolder="no">
+                    <name>target</name>
+                    <script>target = matches[2]
+cecho(&quot;\t\t&lt;red&gt; TARGET: &quot; ..target..&quot;\n&quot;)</script>
+                    <command></command>
+                    <packageName></packageName>
+                    <regex>^t (\w+)$</regex>
+                </Alias>
+            </AliasGroup>
+            <AliasGroup isActive="yes" isFolder="yes">
+                <name>skills</name>
+                <script></script>
+                <command></command>
+                <packageName></packageName>
+                <regex></regex>
+                <AliasGroup isActive="yes" isFolder="yes">
+                    <name>Synthesis</name>
+                    <script></script>
+                    <command></command>
+                    <packageName></packageName>
+                    <regex></regex>
+                    <Alias isActive="yes" isFolder="no">
+                        <name>Transmute Full</name>
+                        <script>transContinue = true
+enableTrigger(&quot;Transmute Continue&quot;)
+transMineral = matches[2]
+
+transLeft = math.floor((cureRiftMax - riftList[transMineral])/5) - 1
+echo(&quot;Need to transmute &quot; .. transLeft .. &quot; times!&quot;)
+
+Transmute(transMineral)</script>
+                        <command></command>
+                        <packageName></packageName>
+                        <regex>^transfull (\w+)$</regex>
+                    </Alias>
+                    <Alias isActive="yes" isFolder="no">
+                        <name>Synthesis Interrupt</name>
+                        <script>if synContinue then
+	synContinue = false
+	echo(&quot;\n\t\tSYNTHESIS PAUSED\n&quot;)
+elseif transContinue then
+	transContinue = false
+	echo(&quot;\n\t\tTRANSMUTATION PAUSED\n&quot;)
+else
+	echo(&quot;\n\t\tNO SYNTHESIS IN PROCESS\n&quot;)
+end</script>
+                        <command></command>
+                        <packageName></packageName>
+                        <regex>^stopsyn$</regex>
+                    </Alias>
+                    <Alias isActive="yes" isFolder="no">
+                        <name>Synthesis Full</name>
+                        <script>synContinue = true
+enableTrigger(&quot;Synthesis Continue&quot;)
+synMetal = matches[2]
+local synDesired = math.floor((cureRiftMax-riftList[synMetal])/2)
+if synMetal == &quot;gold&quot; or synMetal == &quot;silver&quot; then
+	synBase = &quot;mercury&quot;
+elseif synMetal == &quot;iron&quot; or synMetal == &quot;lead&quot; then
+	synBase = &quot;salt&quot;
+elseif synMetal == &quot;tin&quot; or synMetal == &quot;copper&quot; then
+	synBase = &quot;sulphur&quot;
+end
+
+if synDesired &lt; riftList[synBase] then
+	synLeft = synDesired - 1
+else
+	synLeft = riftList[synBase] - 1
+end
+
+echo(&quot;\n\t\tSynthesising &quot; .. synLeft .. &quot; times!\n&quot;)
+Synthesise(synMetal, synBase)</script>
+                        <command></command>
+                        <packageName></packageName>
+                        <regex>^synfull (\w+)$</regex>
+                    </Alias>
+                    <Alias isActive="yes" isFolder="no">
+                        <name>Synthesis Some</name>
+                        <script>synContinue = true
+enableTrigger(&quot;Synthesis Continue&quot;)
+synMetal = matches[3]
+synDesired = tonumber(matches[2])
+
+if synMetal == &quot;gold&quot; or synMetal == &quot;silver&quot; then
+	synBase = &quot;mercury&quot;
+elseif synMetal == &quot;iron&quot; or synMetal == &quot;lead&quot; then
+	synBase = &quot;salt&quot;
+elseif synMetal == &quot;tin&quot; or synMetal == &quot;copper&quot; then
+	synBase = &quot;sulphur&quot;
+end
+
+if synDesired &lt; riftList[synBase] then
+	synLeft = synDesired - 1
+else
+	synLeft = riftList[synBase] - 1
+end
+
+echo(&quot;\n\t\tSynthesising &quot; .. synLeft .. &quot; times!\n&quot;)
+Synthesise(synMetal, synBase)</script>
+                        <command></command>
+                        <packageName></packageName>
+                        <regex>^syn (\d+) (\w+)$</regex>
+                    </Alias>
+                </AliasGroup>
+                <AliasGroup isActive="yes" isFolder="yes">
+                    <name>Shadowmancy</name>
+                    <script></script>
+                    <command></command>
+                    <packageName></packageName>
+                    <regex></regex>
+                </AliasGroup>
+                <AliasGroup isActive="yes" isFolder="yes">
+                    <name>Aeonics</name>
+                    <script></script>
+                    <command></command>
+                    <packageName></packageName>
+                    <regex></regex>
+                </AliasGroup>
+                <AliasGroup isActive="yes" isFolder="yes">
+                    <name>Terminus</name>
+                    <script></script>
+                    <command></command>
+                    <packageName></packageName>
+                    <regex></regex>
+                    <Alias isActive="yes" isFolder="no">
+                        <name>Set fulcrum</name>
+                        <script>expandAlias(&quot;intone morudai&quot;)</script>
+                        <command></command>
+                        <packageName></packageName>
+                        <regex>^set fulcrum$</regex>
+                    </Alias>
+                    <Alias isActive="yes" isFolder="no">
+                        <name>word queueing</name>
+                        <script>if hasWord then
+	send(matches[1])
+else
+	table.insert(wordQueue, matches[1])
+	echo(&quot;WORD '&quot;..matches[2]..&quot;' QUEUED&quot;)
+end</script>
+                        <command></command>
+                        <packageName></packageName>
+                        <regex>^[iI]ntone (.+)$</regex>
+                    </Alias>
+                </AliasGroup>
+            </AliasGroup>
+            <AliasGroup isActive="yes" isFolder="yes">
+                <name>Emotes</name>
+                <script></script>
+                <command></command>
+                <packageName></packageName>
+                <regex></regex>
+                <Alias isActive="yes" isFolder="no">
+                    <name>Sit</name>
+                    <script>didSit = true
+send(matches[1])</script>
+                    <command></command>
+                    <packageName></packageName>
+                    <regex>^([sS]it.*|lie)$</regex>
+                </Alias>
+                <Alias isActive="yes" isFolder="no">
+                    <name>Stand</name>
+                    <script>didSit = false
+send(&quot;stand&quot;)</script>
+                    <command></command>
+                    <packageName></packageName>
+                    <regex>^[sS]tand$</regex>
+                </Alias>
+            </AliasGroup>
+        </AliasGroup>
+        <Alias isActive="yes" isFolder="no">
+            <name>Startup</name>
+            <script>raiseEvent(&quot;startup&quot;)</script>
+            <command></command>
+            <packageName></packageName>
+            <regex>^startup$</regex>
+        </Alias>
+    </AliasPackage>
+    <ActionPackage/>
+    <ScriptPackage>
+        <ScriptGroup isActive="yes" isFolder="yes">
+            <name>proxia</name>
+            <packageName>proxia</packageName>
+            <script></script>
+            <eventHandlerList/>
+            <ScriptGroup isActive="yes" isFolder="yes">
+                <name>misc functions</name>
+                <packageName></packageName>
+                <script>-------------------------------------------------
+--         Put your Lua functions here.        --
+--                                             --
+-- Note that you can also use external Scripts --
+-------------------------------------------------
+</script>
+                <eventHandlerList/>
+                <Script isActive="yes" isFolder="no">
+                    <name>variableInit</name>
+                    <packageName></packageName>
+                    <script>function variableInit()
+	math.randomseed(os.time())
+
+	riftList = {}
+	cureRiftMax = 2500 --herb, commodity, reagent, crystal
+	inkRiftMax = 750 --ink, ingredient
+	healthRiftMax = 2000 --health, mana
+	sipRiftMax = 1000 --other fluids
+
+	maxHP = tonumber(gmcp.Char.Vitals.maxhp)
+	maxMP = tonumber(gmcp.Char.Vitals.maxmp)
+
+	hasWord = true
+	hasBal = true
+	hasEqu = true
+	sipBal = true
+	potashBal = true
+	didSit = false
+
+	invList  = {}
+	roomList = {}
+
+	wordQueue = {}
+	balQueue = {}
+	equQueue = {}
+
+	riftList = {}
+	afflictList = {}
+	eatQueue = {}
+
+	extractedRooms = {}
+	
+	plantToMineral = 
+	{
+	ginseng = &quot;ferrum&quot;,
+	lobelia = &quot;argentum&quot;,
+	kelp = &quot;aurum&quot;,
+	ash = &quot;stannum&quot;,
+	goldenseal = &quot;plumbum&quot;,
+	pear = &quot;calcite&quot;,
+	bellwort = &quot;cuprum&quot;,
+	bloodroot = &quot;magnesium&quot;,
+	ginger = &quot;antimony&quot;
+	}
+	
+end</script>
+                    <eventHandlerList/>
+                </Script>
+                <Script isActive="yes" isFolder="no">
+                    <name>startUp</name>
+                    <packageName></packageName>
+                    <script>function startUp()
+	gmod.enableModule(&quot;Proxia&quot;, &quot;IRE.Rift&quot;)
+	gmod.enableModule(&quot;Proxia&quot;, &quot;Comm.Channel&quot;)
+	send(&quot; &quot;)
+	sendGMCP(&quot;IRE.Rift.Request&quot;)
+	send(&quot; &quot;)
+	tempTimer(0.2, [[parseRift()]])
+	tempTimer(0.3, [[variableInit()]])
+	tempTimer(0.5, [[echo(&quot;\n\t\tJob's done!\n&quot;)]])
+
+end</script>
+                    <eventHandlerList>
+                        <string>startup</string>
+                    </eventHandlerList>
+                </Script>
+                <Script isActive="yes" isFolder="no">
+                    <name>gagLine</name>
+                    <packageName></packageName>
+                    <script>function gagLine()
+	moveCursor(0,getLineCount()-1)
+	deleteLine()
+	moveCursor(0,getLineCount())
+	deleteLine()
+end</script>
+                    <eventHandlerList/>
+                </Script>
+                <Script isActive="yes" isFolder="no">
+                    <name>prompt</name>
+                    <packageName></packageName>
+                    <script>function determineColor(print)
+	if print &gt; 70 then
+		return &quot;green&quot;
+	elseif print &gt; 40 then
+		return &quot;yellow&quot;
+	else
+		return &quot;red&quot;
+	end
+end
+
+
+function displayNumber(num)
+	if num &gt;= 100 then
+		return num
+	elseif num &gt; 9 then
+		return (&quot;0&quot;..tostring(num))
+	elseif num &gt; 999 then
+		return &quot;XXX&quot;
+	else
+		return (&quot;00&quot;..tostring(num))
+	end
+end
+
+
+function writePrompt()
+	local hp = tonumber(gmcp.Char.Vitals.hp)
+	local mp = tonumber(gmcp.Char.Vitals.mp)
+
+	hpPerc = math.floor((hp/maxHP)*100)
+	mpPerc = math.floor((mp/maxMP)*100)
+
+	cecho(&quot;&lt;&quot; .. determineColor(hpPerc) ..&quot;&gt;[&quot;.. displayNumber(hpPerc) ..&quot;%HP]&quot;)
+	cecho(&quot;&lt;&quot; .. determineColor(mpPerc) ..&quot;&gt;[&quot;.. displayNumber(mpPerc) ..&quot;%MP]&quot;)
+	cecho(&quot;&lt;white&gt;[&quot;..displayNumber(tonumber(gmcp.Char.Vitals.nl)) .. &quot;%XP]&quot;)
+	if hunting then
+		local tmp = string.split(gmcp.Char.Vitals.charstats[2], &quot; &quot;)
+		local rage = tonumber(tmp[2])
+		cecho(&quot;&lt;white&gt;[&quot;..displayNumber(rage)..&quot;RG]&quot;)
+	end
+	echo(&quot; - &quot;)
+end
+
+function checkWord()
+	if hasWord and #wordQueue &gt; 0 then
+		send(wordQueue[1])
+		table.remove(wordQueue, 1)
+	end
+end
+
+function checkBalance()
+	if gmcp.Char.Vitals.bal == &quot;1&quot; then
+		hasBal = true
+	else
+		hasBal = false
+	end
+
+	if hasBal and #balQueue &gt; 0 then
+		send(balQueue[1])
+		table.remove(balQueue, 1)
+	end
+end
+
+function checkAfflict()
+	if #afflictList &gt; 0 then
+		if not string.find(afflictList[1].cure, &quot;eat&quot;) and not string.find(afflictList[1].cure, &quot;smoke&quot;) then
+			if (afflictList[1].afflict ~= &quot;prone&quot;) and (afflictList[1].afflict ~= &quot;sleeping&quot;) then
+				send(afflictList[1].cure)
+			elseif not didSit then
+				send(afflictList[1].cure)
+			end
+		end
+	end
+end</script>
+                    <eventHandlerList/>
+                </Script>
+                <Script isActive="yes" isFolder="no">
+                    <name>keytables</name>
+                    <packageName></packageName>
+                    <script>function addToSet(set, key)
+    set[key] = true
+end
+
+function removeFromSet(set, key)
+    set[key] = nil
+end
+
+function setContains(set, key)
+    return set[key] ~= nil
+end</script>
+                    <eventHandlerList/>
+                </Script>
+            </ScriptGroup>
+            <ScriptGroup isActive="yes" isFolder="yes">
+                <name>Skills</name>
+                <packageName></packageName>
+                <script>-------------------------------------------------
+--         Put your Lua functions here.        --
+--                                             --
+-- Note that you can also use external Scripts --
+-------------------------------------------------
+</script>
+                <eventHandlerList/>
+                <ScriptGroup isActive="yes" isFolder="yes">
+                    <name>Synthesis</name>
+                    <packageName></packageName>
+                    <script>-------------------------------------------------
+--         Put your Lua functions here.        --
+--                                             --
+-- Note that you can also use external Scripts --
+-------------------------------------------------
+</script>
+                    <eventHandlerList/>
+                    <Script isActive="yes" isFolder="no">
+                        <name>transmutation table</name>
+                        <packageName></packageName>
+                        <script>transTable = {
+ferrum = {&quot;sulphur&quot;, &quot;2 airon&quot;},
+stannum = {&quot;salt&quot;, &quot;2 tin&quot;},
+dolomite = {&quot;salt&quot;, &quot;lead&quot;, &quot;airon&quot;},
+antimony = {&quot;salt&quot;, &quot;lead&quot;, &quot;asilver&quot;},
+bisemutum = {&quot;sulphur&quot;, &quot;airon&quot;, &quot;tin&quot;},
+cuprum = {&quot;salt&quot; , &quot;2 copper&quot;},
+magnesium = {&quot;sulphur&quot;, &quot;tin&quot;, &quot;asilver&quot;},
+calamine = {&quot;sulphur&quot;, &quot;airon&quot;, &quot;agold&quot;},
+malachite = {&quot;2 salt&quot;, &quot;2 copper&quot;},
+azurite = {&quot;sulphur&quot;, &quot;2 copper&quot;},
+plumbum = {&quot;sulphur&quot;, &quot;2 lead&quot;},
+realgar = {&quot;2 sulphur&quot;, &quot;2 tin&quot;},
+arsenic = {&quot;salt&quot;, &quot;lead&quot;, &quot;tin&quot;},
+gypsum = {&quot;sulphur&quot;, &quot;airon&quot;, &quot;asilver&quot;},
+argentum = {&quot;salt&quot;, &quot;2 asilver&quot;},
+calcite = {&quot;salt&quot;, &quot;airon&quot;, &quot;copper&quot;},
+potash = {&quot;sulphur&quot;, &quot;asilver&quot;, &quot;agold&quot;},
+quicksilver = {&quot;2 mercury&quot;, &quot;asilver&quot;},
+aurum = {&quot;sulphur&quot;, &quot;2 agold&quot;},
+quartz = {&quot;salt&quot;, &quot;tin&quot;, &quot;agold&quot;},
+cinnabar = {&quot;2 sulphur&quot;, &quot;2 mercury&quot;}
+}</script>
+                        <eventHandlerList/>
+                    </Script>
+                    <Script isActive="yes" isFolder="no">
+                        <name>synthesis functions</name>
+                        <packageName></packageName>
+                        <script>function Synthesise(metal, base)
+		send(&quot;outr &quot; .. base)
+		send(&quot;synthesise &quot; .. metal)
+end
+
+function Transmute(mineral)
+	for k,v in ipairs(transTable[mineral]) do
+		send(&quot;outr &quot; .. v)
+	end
+	send(&quot;transmutate &quot; .. mineral)
+end</script>
+                        <eventHandlerList/>
+                    </Script>
+                    <Script isActive="yes" isFolder="no">
+                        <name>extract</name>
+                        <packageName></packageName>
+                        <script>function extract()
+	if extracting then
+		if not setContains(extractedRooms, gmcp.Room.Info.num) then
+			addToSet(extractedRooms, gmcp.Room.Info.num)
+			if gmcp.Room.Info.environment == &quot;Constructed underground&quot;
+				then
+					table.insert(balQueue, &quot;extract mercury&quot;)
+					table.insert(balQueue, &quot;extract sulphur&quot;)
+					table.insert(balQueue, &quot;extract salt&quot;)
+					table.insert(balQueue, &quot;inr all&quot;)
+				end
+			end
+		end
+end</script>
+                        <eventHandlerList>
+                            <string>gmcp.Room.Info</string>
+                        </eventHandlerList>
+                    </Script>
+                </ScriptGroup>
+            </ScriptGroup>
+            <ScriptGroup isActive="yes" isFolder="yes">
+                <name>Rift Stuff</name>
+                <packageName></packageName>
+                <script>-------------------------------------------------
+--         Put your Lua functions here.        --
+--                                             --
+-- Note that you can also use external Scripts --
+-------------------------------------------------
+</script>
+                <eventHandlerList/>
+                <Script isActive="yes" isFolder="no">
+                    <name>riftUpdate</name>
+                    <packageName></packageName>
+                    <script>function riftUpdate()
+	if isInrAll then
+		isInrAll = false
+	else
+		changedItem = gmcp.IRE.Rift.Change.name
+		for k,v in ipairs(riftList) do
+			if v.name == changedItem then
+				v.amount = gmcp.IRE.Rift.Change.amount
+			end
+		end
+		parseRift()
+	end
+end</script>
+                    <eventHandlerList>
+                        <string>gmcp.IRE.Rift</string>
+                    </eventHandlerList>
+                </Script>
+                <Script isActive="yes" isFolder="no">
+                    <name>Rift Functions</name>
+                    <packageName></packageName>
+                    <script>function parseRift()
+	for k,v in ipairs(gmcp.IRE.Rift.List) do
+		riftList[v.name] = tonumber(v.amount)
+	end
+end</script>
+                    <eventHandlerList/>
+                </Script>
+            </ScriptGroup>
+            <ScriptGroup isActive="yes" isFolder="yes">
+                <name>curing</name>
+                <packageName></packageName>
+                <script></script>
+                <eventHandlerList/>
+                <Script isActive="yes" isFolder="no">
+                    <name>cureHM</name>
+                    <packageName></packageName>
+                    <script>function cureHM()
+	if sipBal then
+		if hpPerc &lt; 80 then
+			send(&quot;sip health&quot;)
+			sipBal = false
+		elseif mpPerc &lt; 80 then
+			send(&quot;sip mana&quot;)
+			sipBal = false
+		end
+	end
+	if potashBal then
+		if (0 &lt;= hpPerc and hpPerc &lt; 60) or (0 &lt;= mpPerc and mpPerc &lt; 60) then
+			potashBal = false
+			eatPotash = true
+		end
+	end
+	if eatPotash == true then
+		if isInInv(&quot;potash&quot;) then
+			send(&quot;eat potash&quot;)
+		else
+			send(&quot;outr potash&quot;)
+		end
+	end
+end</script>
+                    <eventHandlerList/>
+                </Script>
+                <Script isActive="yes" isFolder="no">
+                    <name>consumables</name>
+                    <packageName></packageName>
+                    <script>function eatCure()
+	if isInInv(eatQueue[1]) then
+		send(&quot;eat &quot; .. eatQueue[1])
+	else
+		send(&quot;outr &quot; .. eatQueue[1])
+	end
+end</script>
+                    <eventHandlerList/>
+                </Script>
+                <ScriptGroup isActive="yes" isFolder="yes">
+                    <name>Afflictions</name>
+                    <packageName></packageName>
+                    <script></script>
+                    <eventHandlerList/>
+                    <Script isActive="yes" isFolder="no">
+                        <name>addAfflict</name>
+                        <packageName></packageName>
+                        <script>function addAfflict()
+	local afflict = gmcp.Char.Afflictions.Add.name
+	local cure = gmcp.Char.Afflictions.Add.cure
+	if afflict == &quot;sleeping&quot; then
+		cure = &quot;wake&quot;
+	end
+	table.insert(afflictList, {afflict = afflict, cure = cure})
+	echo(afflict .. &quot; is cured by &quot; .. cure .. &quot;!\n&quot;)
+end</script>
+                        <eventHandlerList>
+                            <string>gmcp.Char.Afflictions.Add</string>
+                        </eventHandlerList>
+                    </Script>
+                    <Script isActive="yes" isFolder="no">
+                        <name>removeAfflict</name>
+                        <packageName></packageName>
+                        <script>function removeAfflict()
+	table.remove(afflictList, 1)
+	echo(gmcp.Char.Afflictions.Remove[1] .. &quot; cured!&quot;)
+end</script>
+                        <eventHandlerList>
+                            <string>gmcp.Char.Afflictions.Remove</string>
+                        </eventHandlerList>
+                    </Script>
+                </ScriptGroup>
+            </ScriptGroup>
+            <ScriptGroup isActive="yes" isFolder="yes">
+                <name>Inventory Management</name>
+                <packageName></packageName>
+                <script>-------------------------------------------------
+--         Put your Lua functions here.        --
+--                                             --
+-- Note that you can also use external Scripts --
+-------------------------------------------------
+</script>
+                <eventHandlerList/>
+                <Script isActive="yes" isFolder="no">
+                    <name>Inventory Initialization</name>
+                    <packageName></packageName>
+                    <script>function invInit()
+	sendGMCP(&quot;Char.Items.Inv&quot;)
+	send(&quot; &quot;)
+	if gmcp.Char.Items.List.location == &quot;inv&quot; then
+		for k,v in ipairs(gmcp.Char.Items.List.items) do
+			invList[v.id] = v.name
+		end
+	else
+		echo(&quot;\n\tInventory error! Could not access inv through GMCP!\n&quot;)
+	end
+end</script>
+                    <eventHandlerList/>
+                </Script>
+                <Script isActive="yes" isFolder="no">
+                    <name>removeItem</name>
+                    <packageName></packageName>
+                    <script>function removeItem()
+	local loc = gmcp.Char.Items.Remove.location
+	if loc == &quot;inv&quot; then
+		invList[gmcp.Char.Items.Remove.item.id] = nil
+	end
+end</script>
+                    <eventHandlerList>
+                        <string>gmcp.Char.Items.Remove</string>
+                    </eventHandlerList>
+                </Script>
+                <Script isActive="yes" isFolder="no">
+                    <name>addItem</name>
+                    <packageName></packageName>
+                    <script>function addItem()
+	local loc = gmcp.Char.Items.Add.location
+	if loc == &quot;inv&quot; then
+		invList[gmcp.Char.Items.Add.item.id] = gmcp.Char.Items.Add.item.name
+	end
+end</script>
+                    <eventHandlerList>
+                        <string>gmcp.Char.Items.Add</string>
+                    </eventHandlerList>
+                </Script>
+                <Script isActive="yes" isFolder="no">
+                    <name>misc inventory scripts</name>
+                    <packageName></packageName>
+                    <script>function isInInv(item)
+	for id, name in pairs(invList) do
+		if string.find(name, item) then
+			return true
+		end
+	end
+end</script>
+                    <eventHandlerList/>
+                </Script>
+            </ScriptGroup>
+        </ScriptGroup>
+    </ScriptPackage>
+    <KeyPackage>
+        <KeyGroup isActive="yes" isFolder="yes">
+            <name>proxia</name>
+            <packageName>proxia</packageName>
+            <script></script>
+            <command></command>
+            <keyCode>7471215</keyCode>
+            <keyModifier>6881396</keyModifier>
+            <KeyGroup isActive="yes" isFolder="yes">
+                <name>movement</name>
+                <packageName></packageName>
+                <script></script>
+                <command></command>
+                <keyCode>-1</keyCode>
+                <keyModifier>-1</keyModifier>
+                <Key isActive="yes" isFolder="no">
+                    <name>n</name>
+                    <packageName></packageName>
+                    <script></script>
+                    <command>n</command>
+                    <keyCode>56</keyCode>
+                    <keyModifier>536870912</keyModifier>
+                </Key>
+                <Key isActive="yes" isFolder="no">
+                    <name>ne</name>
+                    <packageName></packageName>
+                    <script></script>
+                    <command>ne</command>
+                    <keyCode>57</keyCode>
+                    <keyModifier>536870912</keyModifier>
+                </Key>
+                <Key isActive="yes" isFolder="no">
+                    <name>e</name>
+                    <packageName></packageName>
+                    <script></script>
+                    <command>e</command>
+                    <keyCode>54</keyCode>
+                    <keyModifier>536870912</keyModifier>
+                </Key>
+                <Key isActive="yes" isFolder="no">
+                    <name>se</name>
+                    <packageName></packageName>
+                    <script></script>
+                    <command>se</command>
+                    <keyCode>51</keyCode>
+                    <keyModifier>536870912</keyModifier>
+                </Key>
+                <Key isActive="yes" isFolder="no">
+                    <name>s</name>
+                    <packageName></packageName>
+                    <script></script>
+                    <command>s</command>
+                    <keyCode>50</keyCode>
+                    <keyModifier>536870912</keyModifier>
+                </Key>
+                <Key isActive="yes" isFolder="no">
+                    <name>sw</name>
+                    <packageName></packageName>
+                    <script></script>
+                    <command>sw</command>
+                    <keyCode>49</keyCode>
+                    <keyModifier>536870912</keyModifier>
+                </Key>
+                <Key isActive="yes" isFolder="no">
+                    <name>w</name>
+                    <packageName></packageName>
+                    <script></script>
+                    <command>w</command>
+                    <keyCode>52</keyCode>
+                    <keyModifier>536870912</keyModifier>
+                </Key>
+                <Key isActive="yes" isFolder="no">
+                    <name>nw</name>
+                    <packageName></packageName>
+                    <script></script>
+                    <command>nw</command>
+                    <keyCode>55</keyCode>
+                    <keyModifier>536870912</keyModifier>
+                </Key>
+                <Key isActive="yes" isFolder="no">
+                    <name>in</name>
+                    <packageName></packageName>
+                    <script></script>
+                    <command>in</command>
+                    <keyCode>42</keyCode>
+                    <keyModifier>536870912</keyModifier>
+                </Key>
+                <Key isActive="yes" isFolder="no">
+                    <name>out</name>
+                    <packageName></packageName>
+                    <script></script>
+                    <command>out</command>
+                    <keyCode>47</keyCode>
+                    <keyModifier>536870912</keyModifier>
+                </Key>
+                <Key isActive="yes" isFolder="no">
+                    <name>up</name>
+                    <packageName></packageName>
+                    <script></script>
+                    <command>up</command>
+                    <keyCode>45</keyCode>
+                    <keyModifier>536870912</keyModifier>
+                </Key>
+                <Key isActive="yes" isFolder="no">
+                    <name>down</name>
+                    <packageName></packageName>
+                    <script></script>
+                    <command>down</command>
+                    <keyCode>43</keyCode>
+                    <keyModifier>536870912</keyModifier>
+                </Key>
+                <Key isActive="yes" isFolder="no">
+                    <name>map</name>
+                    <packageName></packageName>
+                    <script></script>
+                    <command>map</command>
+                    <keyCode>53</keyCode>
+                    <keyModifier>536870912</keyModifier>
+                </Key>
+            </KeyGroup>
+            <KeyGroup isActive="yes" isFolder="yes">
+                <name>hunting</name>
+                <packageName></packageName>
+                <script></script>
+                <command></command>
+                <keyCode>-1</keyCode>
+                <keyModifier>-1</keyModifier>
+                <Key isActive="yes" isFolder="no">
+                    <name>attack</name>
+                    <packageName></packageName>
+                    <script>send(attack ..&quot; &quot;..target)</script>
+                    <command></command>
+                    <keyCode>96</keyCode>
+                    <keyModifier>0</keyModifier>
+                </Key>
+                <Key isActive="yes" isFolder="no">
+                    <name>reap/cull</name>
+                    <packageName></packageName>
+                    <script>if isReap then
+	isReap = false
+	attack = &quot;shadow cull&quot;
+	echo(&quot;\t\tCulling\n&quot;)
+else
+	isReap = true
+	attack = &quot;shadow reap&quot;
+	echo(&quot;\t\tReaping\n&quot;)
+end</script>
+                    <command></command>
+                    <keyCode>126</keyCode>
+                    <keyModifier>33554432</keyModifier>
+                </Key>
+                <Key isActive="yes" isFolder="no">
+                    <name>New Key</name>
+                    <packageName></packageName>
+                    <script>if not hunting then
+	hunting = true
+	cecho(&quot;\t\t&lt;red&gt;Now Hunting\n&quot;)
+else
+	hunting = false
+	cecho(&quot;\t\t&lt;green&gt;Not Hunting\n&quot;)
+end</script>
+                    <command></command>
+                    <keyCode>96</keyCode>
+                    <keyModifier>67108864</keyModifier>
+                </Key>
+            </KeyGroup>
+            <KeyGroup isActive="yes" isFolder="yes">
+                <name>Skills</name>
+                <packageName></packageName>
+                <script></script>
+                <command></command>
+                <keyCode>-1</keyCode>
+                <keyModifier>-1</keyModifier>
+                <Key isActive="yes" isFolder="no">
+                    <name>synharvest</name>
+                    <packageName></packageName>
+                    <script>if not extracting then
+	extracting = true
+	echo(&quot;\t\tEXTRACTION STARTED\n&quot;)
+else
+	extracting = false
+	extractedRooms = {}
+	echo(&quot;\t\tEXTRACTION FINISHED\n&quot;)
+end</script>
+                    <command></command>
+                    <keyCode>69</keyCode>
+                    <keyModifier>100663296</keyModifier>
+                </Key>
+            </KeyGroup>
+        </KeyGroup>
+    </KeyPackage>
+</MudletPackage>
